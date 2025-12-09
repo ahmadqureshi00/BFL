@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-import { ChevronDown, MapPin, GraduationCap, DollarSign } from 'lucide-react';
+import { ChevronDown, MapPin, GraduationCap, DollarSign, Filter, X } from 'lucide-react';
 import { universities } from '@/lib/data';
 import { University } from '@/types';
 
@@ -17,6 +17,7 @@ export default function UniversitiesClient() {
   const [selectedSubjects, setSelectedSubjects] = useState<string[]>([]);
   const [selectedLevels, setSelectedLevels] = useState<string[]>([]);
   const [filteredUniversities, setFilteredUniversities] = useState<University[]>(universities);
+  const [showFilters, setShowFilters] = useState(false); // For mobile filter toggle
   
   // Unique values for filters
   const allCountries = [...new Set(universities.map(u => u.location.country))];
@@ -93,10 +94,29 @@ export default function UniversitiesClient() {
         </div>
         
         <div className="flex flex-col lg:flex-row gap-8">
+          {/* Mobile Filter Button */}
+          <div className="lg:hidden mb-4">
+            <button
+              onClick={() => setShowFilters(!showFilters)}
+              className="flex items-center justify-center w-full py-2 px-4 bg-white border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50"
+            >
+              <Filter className="h-5 w-5 mr-2" />
+              {showFilters ? 'Hide Filters' : 'Show Filters'}
+            </button>
+          </div>
+          
           {/* Filters Sidebar */}
-          <div className="lg:w-1/4">
+          <div className={`${showFilters ? 'block' : 'hidden'} lg:block lg:w-1/4`}>
             <div className="bg-white rounded-lg shadow-md p-6 sticky top-24">
-              <h2 className="text-xl font-bold text-gray-900 mb-6">Filters</h2>
+              <div className="flex justify-between items-center mb-6">
+                <h2 className="text-xl font-bold text-gray-900">Filters</h2>
+                <button 
+                  onClick={() => setShowFilters(false)}
+                  className="lg:hidden text-gray-500 hover:text-gray-700"
+                >
+                  <X className="h-5 w-5" />
+                </button>
+              </div>
               
               {/* Budget Filter */}
               <div className="mb-8">

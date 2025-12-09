@@ -77,7 +77,7 @@ const Navbar = () => {
                     onMouseEnter={() => setIsDestinationsOpen(true)}
                     onMouseLeave={() => setIsDestinationsOpen(false)}
                   >
-                    <div className="grid grid-cols-2 gap-8 p-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
                       {/* Visual Column */}
                       <div className="bg-gradient-to-br from-blue-900 to-blue-700 rounded-lg p-6 text-white">
                         <h3 className="text-xl font-bold mb-2">Find Your Perfect Program</h3>
@@ -166,6 +166,7 @@ const Navbar = () => {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-900 hover:bg-gray-100 focus:outline-none"
+              aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
               {isMenuOpen ? (
@@ -208,7 +209,7 @@ const Navbar = () => {
               </button>
               
               {isDestinationsOpen && (
-                <div className="mt-2 pl-4 space-y-2">
+                <div className="mt-2 pl-4 space-y-2 max-h-60 overflow-y-auto">
                   {continents.map(continent => (
                     <div key={continent}>
                       <h4 className="font-semibold text-gray-700">{continent}</h4>
@@ -239,7 +240,7 @@ const Navbar = () => {
               </button>
               
               {isSubjectsOpen && (
-                <div className="mt-2 pl-4 space-y-2">
+                <div className="mt-2 pl-4 space-y-2 max-h-60 overflow-y-auto">
                   {['Business', 'Engineering', 'Arts', 'Medicine', 'Computer Science', 'Law'].map(subject => (
                     <Link
                       key={subject}
