@@ -1,0 +1,86 @@
+[
+  {
+    "id": "uni_oxford",
+    "name": "University of Oxford",
+    "slug": "university-of-oxford",
+    "location": { "city": "Oxford", "country": "UK", "continent": "Europe" },
+    "ranking": 1,
+    "acceptanceRate": "17%",
+    "tuition": { "value": 15000, "currency": "GBP", "period": "Semester" },
+    "subjects": ["medicine", "law", "arts"],
+    "levels": ["bachelor", "master", "phd"],
+    "images": {
+      "hero": "/materials/oxford_hero.jpg",
+      "gallery": ["/materials/oxford_1.jpg", "/materials/oxford_2.jpg"]
+    },
+    "description": "The oldest university in the English-speaking world, Oxford is consistently ranked among the world's best universities.",
+    "highlights": [
+      { "title": "Prestige", "desc": "Ranked #1 globally." },
+      { "title": "History", "desc": "Founded in 1096." },
+      { "title": "Alumni", "desc": "28 Nobel Prize winners." }
+    ]
+  },
+  {
+    "id": "uni_cambridge",
+    "name": "University of Cambridge",
+    "slug": "university-of-cambridge",
+    "location": { "city": "Cambridge", "country": "UK", "continent": "Europe" },
+    "ranking": 2,
+    "acceptanceRate": "21%",
+    "tuition": { "value": 14500, "currency": "GBP", "period": "Semester" },
+    "subjects": ["engineering", "business", "arts"],
+    "levels": ["bachelor", "master", "phd"],
+    "images": {
+      "hero": "/materials/cambridge_hero.jpg",
+      "gallery": ["/materials/cambridge_1.jpg", "/materials/cambridge_2.jpg"]
+    },
+    "description": "A public research university in Cambridge, England. Founded in 1209, it's the second-oldest university in the English-speaking world.",
+    "highlights": [
+      { "title": "Research", "desc": "Leading research institution." },
+      { "title": "Colleges", "desc": "Comprised of 31 constituent colleges." },
+      { "title": "Innovation", "desc": "Home to numerous scientific breakthroughs." }
+    ]
+  },
+  {
+    "id": "uni_mit",
+    "name": "Massachusetts Institute of Technology",
+    "slug": "massachusetts-institute-of-technology",
+    "location": { "city": "Cambridge", "country": "USA", "continent": "North America" },
+    "ranking": 1,
+    "acceptanceRate": "4%",
+    "tuition": { "value": 57590, "currency": "USD", "period": "Year" },
+    "subjects": ["engineering", "computer-science", "business"],
+    "levels": ["bachelor", "master", "phd"],
+    "images": {
+      "hero": "/materials/mit_hero.jpg",
+      "gallery": ["/materials/mit_1.jpg", "/materials/mit_2.jpg"]
+    },
+    "description": "A private research university specializing in science and technology, known for its innovation and entrepreneurship culture.",
+    "highlights": [
+      { "title": "Technology", "desc": "World leader in STEM education." },
+      { "title": "Entrepreneurship", "desc": "Spawned thousands of startups." },
+      { "title": "Research", "desc": "$800M annual research budget." }
+    ]
+  },
+  {
+    "id": "uni_stanford",
+    "name": "Stanford University",
+    "slug": "stanford-university",
+    "location": { "city": "Stanford", "country": "USA", "continent": "North America" },
+    "ranking": 3,
+    "acceptanceRate": "4%",
+    "tuition": { "value": 56169, "currency": "USD", "period": "Year" },
+    "subjects": ["business", "computer-science", "medicine"],
+    "levels": ["bachelor", "master", "phd"],
+    "images": {
+      "hero": "/materials/stanford_hero.jpg",
+      "gallery": ["/materials/stanford_1.jpg", "/materials/stanford_2.jpg"]
+    },
+    "description": "A private research university known for its academic strength, wealth, and proximity to Silicon Valley.",
+    "highlights": [
+      { "title": "Innovation", "desc": "Heart of Silicon Valley." },
+      { "title": "Endowment", "desc": "$37B endowment." },
+      { "title": "Alumni", "desc": "Associated with 84 Nobel laureates." }
+    ]
+  }
+]

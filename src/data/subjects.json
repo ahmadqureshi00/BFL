@@ -1,0 +1,44 @@
+[
+  {
+    "id": "subj_cs",
+    "name": "Computer Science",
+    "slug": "computer-science",
+    "description": "Study algorithms and AI in global tech hubs.",
+    "image": "/materials/subj_cs.jpg"
+  },
+  {
+    "id": "subj_business",
+    "name": "Business",
+    "slug": "business",
+    "description": "Develop leadership skills in international business environments.",
+    "image": "/materials/subj_business.jpg"
+  },
+  {
+    "id": "subj_engineering",
+    "name": "Engineering",
+    "slug": "engineering",
+    "description": "Hands-on learning in cutting-edge laboratories and facilities.",
+    "image": "/materials/subj_engineering.jpg"
+  },
+  {
+    "id": "subj_medicine",
+    "name": "Medicine",
+    "slug": "medicine",
+    "description": "Clinical training in world-renowned healthcare systems.",
+    "image": "/materials/subj_medicine.jpg"
+  },
+  {
+    "id": "subj_law",
+    "name": "Law",
+    "slug": "law",
+    "description": "Study legal systems in diverse international contexts.",
+    "image": "/materials/subj_law.jpg"
+  },
+  {
+    "id": "subj_arts",
+    "name": "Arts & Humanities",
+    "slug": "arts-humanities",
+    "description": "Explore cultures, literature, and philosophy in historic settings.",
+    "image": "/materials/subj_arts.jpg"
+  }
+]
