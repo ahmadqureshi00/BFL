@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "BFL.pk - Find Your Dream University",
   description: "Connect with educational consultants and discover universities abroad",
+  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({

@@ -12,10 +12,11 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Force light mode colors even on devices that prefer dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;  /* Keep white background */
+    --foreground: #171717;  /* Keep dark text */
   }
 }
 
